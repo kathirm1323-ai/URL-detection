@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuardLink | Cybersecurity URL Analysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <main class="container">
+        <header>
+            <div class="logo">
+                <span class="shield-icon">🛡️</span>
+                <h1>GuardLink</h1>
+            </div>
+            <p class="subtitle">Professional Phishing & Scam Detection System</p>
+        </header>
+
+        <section class="scanner-box">
+            <div class="input-group">
+                <input type="text" id="urlInput" placeholder="Enter URL to analyze (e.g., https://safe-site.com)" autocomplete="off">
+                <button id="scanBtn">
+                    <span class="btn-text">SCAN URL</span>
+                    <div class="loader-dots" style="display: none;">
+                        <span></span><span></span><span></span>
+                    </div>
+                </button>
+            </div>
+            <p class="input-hint">Enter any link to perform a deep heuristic analysis.</p>
+        </section>
+
+        <section id="resultContainer" class="result-container" style="display: none;">
+            <!-- Results will be injected here -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 GuardLink Analyis System. All detections are heuristic-based.</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

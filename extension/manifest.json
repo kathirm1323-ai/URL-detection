@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "GuardLink Automated Scanner",
+  "version": "1.0",
+  "description": "Automatically scans websites for phishing and scam activities.",
+  "permissions": ["tabs", "storage", "activeTab", "webNavigation"],
+  "host_permissions": ["http://localhost:8000/*", "http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "http://localhost/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
