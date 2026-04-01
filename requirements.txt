@@ -1,7 +1,5 @@
 fastapi
 uvicorn
-jinja2
-requests
 tldextract
-python-whois
+requests
 python-multipart
