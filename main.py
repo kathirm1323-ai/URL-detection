@@ -13,7 +13,7 @@ TRUSTED_DOMAINS = {
     'amazon.com', 'amazon.in', 'linkedin.com', 'facebook.com', 'twitter.com', 
     'instagram.com', 'netflix.com', 'paypal.com', 'office.com', 'live.com',
     'bing.com', 'yahoo.com', 'stackoverflow.com', 'wikipedia.org', 'dropbox.com',
-    'chatgpt.com', 'openai.com'
+    'chatgpt.com', 'openai.com', 'cloudflare.com', 'railway.app'
 }
 
 app = FastAPI()
