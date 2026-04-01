@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         statusIcon.innerText = '⚙️';
 
         try {
-            const response = await fetch('http://localhost:8000/analyze', {
+            const response = await fetch('https://url-detection-production-206d.up.railway.app/analyze', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: `url=${encodeURIComponent(tab.url)}`
